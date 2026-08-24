@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 45px;
+    background-color: white;
+    position: relative;
+    z-index: 4;
+}
+
+.logo img {
+    width: 95px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+}
+
+.nav-links a {
+    color: #36783d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #1f5427;
+}
+
+.reservation-link {
+    margin-left: auto;
+}
+
+.hero {
+    height: 500px;
+    position: relative;
+    overflow: visible;
+    background-color: white;
+}
+
+.hero-text {
+    position: absolute;
+    left: 150px;
+    top: 45px;
+    z-index: 3;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 150px;
+    font-weight: 400;
+}
+
+.hero-text p {
+    margin: 3px 0 0 40px;
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 35px;
+}
+
+.hero-text a {
+    display: inline-block;
+    margin: 5px 0 0 80px;
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 35px;
+    color: black;
+    text-decoration: none;
+}
+
+.hero-image {
+    position: absolute;
+    right: -80px;
+    top: -80px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c9dfd7;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.hero-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu-section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.menu-section h2,
+.reservation-section h2 {
+    margin: 0 0 30px;
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.filter-wrapper {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.filter-container {
+    position: relative;
+    display: inline-block;
+}
+
+.filter-button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #c9dfd7;
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.filter-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+.filter-dropdown.show {
+    display: block;
+}
+
+.filter-dropdown div {
+    padding: 10px;
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.filter-dropdown div:hover {
+    background-color: #c9dfd7;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.menu-item {
+    text-align: center;
+    font-family: "Just Me Again Down Here", cursive;
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 280px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.menu-item h3 {
+    margin: 10px 0 5px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.menu-item p {
+    margin: 0 0 15px;
+    font-size: 28px;
+}
+
+.details-btn {
+    padding: 8px 20px;
+    border: none;
+    background-color: #c9dfd7;
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    width: 400px;
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    font-family: "Just Me Again Down Here", cursive;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.modal-content p {
+    font-size: 30px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.reservation-section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.reservation-form {
+    max-width: 500px;
+    margin: auto;
+    font-family: "Just Me Again Down Here", cursive;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #36783d;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.guest-counter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.guest-counter button {
+    width: 45px;
+    height: 40px;
+    border: none;
+    background-color: #c9dfd7;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#guestCount {
+    font-size: 30px;
+}
+
+.reserve-btn {
+    margin-top: 15px;
+    padding: 12px 30px;
+    border: none;
+    background-color: #36783d;
+    color: white;
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#formMessage {
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 28px;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 30px 50px 10px;
+    background-color: #c9dfd7;
+    font-family: "Just Me Again Down Here", cursive;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info p:first-child {
+    margin: 0;
+    font-size: 40px;
+}
+
+.footer-info p:last-child {
+    
+    font-size: 25px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    font-size: 28px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #36783d;
+}
+
+.copyright {
+    margin-left: 1000px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 22px;
+}
