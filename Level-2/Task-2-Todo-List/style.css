@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: "Irish Grover", cursive;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 700px;
+    min-height: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #518550;
+}
+
+h1 {
+    margin-top: 0;
+    color: white;
+    font-size: 30px;
+}
+
+.add-task {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.add-task input {
+    padding: 10px;
+    border: none;
+    background-color: #94AB91;
+    font-size: 18px;
+    font-family: "Irish Grover", cursive;
+}
+
+#taskInput {
+    flex: 1;
+}
+
+#taskDate {
+    width: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#addButton {
+    background-color: #3f6d42;
+    color: black;
+}
+
+.filters {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.filters button,
+#chooseDate {
+    padding: 10px 20px;
+    border: none;
+    background-color: #eeeeee;
+    font-weight: bold;
+}
+
+#taskList {
+    margin-top: 20px;
+    border-top: 3px solid black;
+}
+
+.date-title {
+    margin: 30px 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 5px;
+}
+
+.task-item span {
+    flex: 1;
+}
+
+.task-item button {
+    background-color: transparent;
+    color: black;
+}

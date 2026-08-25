@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plan Your Day</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Plan your day</h1>
+
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Add a task">
+
+            <input type="date" id="taskDate">
+
+            <button id="addButton">ADD</button>
+        </div>
+
+        <div class="filters">
+            <button id="activeButton">ACTIVE</button>
+
+            <button id="completedButton">COMPLETED</button>
+
+            <input type="date" id="chooseDate">
+        </div>
+
+        <div id="taskList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
